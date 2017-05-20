@@ -8,7 +8,8 @@ from bs4 import BeautifulSoup
 
 from . import __version__
 from .dump import DatetimeEncoder, find_user_details, find_user_urls
-from .filter import (read_user_data, recent_event_frequency_filter_generator,
+from .filter import (duplicate_event_filter_generator, read_user_data,
+                     recent_event_frequency_filter_generator,
                      social_link_filter_generator)
 from .user import format_user_info
 
@@ -51,13 +52,17 @@ def dump(event_url):
 @click.option('--facebook-link/--no-facebook-link', default=False)
 @click.option('--github-link/--no-github-link', default=False)
 @click.option('--twitter-link/--no-twitter-link', default=False)
-@click.option('--recent-event-frequency', default=7)
-def filter(file_path, facebook_link, github_link, twitter_link, recent_event_frequency):
+@click.option('--duplicate-event/--no-duplicate-event', default=False)
+@click.option('--recent-event-interval', default=7)
+def filter(
+        file_path, facebook_link, github_link, twitter_link,
+        recent_event_interval, duplicate_event):
     filter_funcs = [
         social_link_filter_generator('twitter', required=twitter_link),
         social_link_filter_generator('facebook', required=facebook_link),
         social_link_filter_generator('github', required=github_link),
-        recent_event_frequency_filter_generator(recent_event_frequency),
+        recent_event_frequency_filter_generator(recent_event_interval),
+        duplicate_event_filter_generator(duplicate_event)
     ]
     user_data = read_user_data(file_path)
     users = [u for u in user_data if all([f(u) for f in filter_funcs])]
