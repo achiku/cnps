@@ -34,7 +34,7 @@ def social_link_filter_generator(target, required=False):
     return f
 
 
-def group_dates(dates):
+def _group_dates(dates):
     p = datetime.now()
     paired_dates = []
     for i, d in enumerate(dates):
@@ -47,14 +47,19 @@ def group_dates(dates):
     return paired_dates
 
 
+def avg_event_interval(dates):
+    sum_diff = timedelta()
+    dates = _group_dates(dates)
+    for x, y in dates:
+        sum_diff = sum_diff + (x - y)
+    avg_interval = float(sum_diff.days) / float(len(dates))
+    return avg_interval
+
+
 def recent_event_frequency_filter_generator(interval):
     def f(user):
-        sum_diff = timedelta()
-        dates = group_dates(user['event_dates'])
-        for x, y in dates:
-            sum_diff = sum_diff + (x - y)
-        avg_diff = float(sum_diff.days) / float(len(dates))
-        if avg_diff >= interval:
+        avg_interval = avg_event_interval(user['event_dates'])
+        if avg_interval <= interval:
             return True
         return False
     return f

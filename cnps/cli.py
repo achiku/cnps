@@ -26,7 +26,7 @@ def cli(ctx):
     pass
 
 
-@cli.command(help="dump basic user data")
+@cli.command(help="dump basic event applicants data")
 @click.argument('event-url', required=True)
 def dump(event_url):
     participant_url = urljoin(event_url, 'participation')
@@ -47,21 +47,21 @@ def dump(event_url):
     click.echo(json.dumps(user_data, sort_keys=True, indent=2, cls=DatetimeEncoder))
 
 
-@cli.command(help="filter user data")
+@cli.command(help="filter applicants data with multiple options")
 @click.argument('file-path', required=True)
 @click.option('--facebook-link/--no-facebook-link', default=False)
 @click.option('--github-link/--no-github-link', default=False)
 @click.option('--twitter-link/--no-twitter-link', default=False)
 @click.option('--duplicate-event/--no-duplicate-event', default=False)
-@click.option('--recent-event-interval', default=7)
+@click.option('--avg-event-interval', default=7)
 def filter(
         file_path, facebook_link, github_link, twitter_link,
-        recent_event_interval, duplicate_event):
+        avg_event_interval, duplicate_event):
     filter_funcs = [
         social_link_filter_generator('twitter', required=twitter_link),
         social_link_filter_generator('facebook', required=facebook_link),
         social_link_filter_generator('github', required=github_link),
-        recent_event_frequency_filter_generator(recent_event_interval),
+        recent_event_frequency_filter_generator(avg_event_interval),
         duplicate_event_filter_generator(duplicate_event)
     ]
     user_data = read_user_data(file_path)
