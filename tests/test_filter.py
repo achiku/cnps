@@ -89,6 +89,13 @@ def test_duplicate_event_filter_generator(event_dates, required, expected):
             date(2017, 5, 22),
             date(2017, 5, 20),
             date(2017, 5, 18),
+        ], 1, False
+    ),
+    (
+        [
+            date(2017, 5, 22),
+            date(2017, 5, 20),
+            date(2017, 5, 18),
         ], 2, True
     ),
     (
@@ -96,11 +103,11 @@ def test_duplicate_event_filter_generator(event_dates, required, expected):
             date(2017, 5, 22),
             date(2017, 5, 20),
             date(2017, 5, 18),
-        ], 3, False
+        ], 3, True
     ),
 ])
 def test_recent_event_frequency_filter_generator(event_dates, interval, expected):
-    from cnps.filter import recent_event_frequency_filter_generator
+    from cnps.filter import recent_event_interval_filter_generator
     user = {'event_dates': event_dates}
-    f = recent_event_frequency_filter_generator(interval)
+    f = recent_event_interval_filter_generator(interval)
     assert f(user) == expected

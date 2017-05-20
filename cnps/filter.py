@@ -56,7 +56,7 @@ def avg_event_interval(dates):
     return avg_interval
 
 
-def recent_event_frequency_filter_generator(interval):
+def recent_event_interval_filter_generator(interval):
     def f(user):
         avg_interval = avg_event_interval(user['event_dates'])
         if avg_interval <= interval:

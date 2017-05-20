@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import pytest
 from bs4 import BeautifulSoup
 from click.testing import CliRunner
 
@@ -9,7 +10,7 @@ def test_find_user_urls():
     with open('./data/connpass_user_list.html') as fp:
         soup = BeautifulSoup(fp, 'html.parser')
         urls = find_user_urls(soup)
-    assert len(urls) == 32
+    assert 'https://connpass.com/user/KeisukeKogure/' in urls
 
 
 def test_find_user_detail():
@@ -21,6 +22,7 @@ def test_find_user_detail():
     assert user['user_id'] == 'KeisukeKogure'
 
 
+@pytest.mark.skip()
 def test_dump_user_data():
     from cnps.cli import dump
     runner = CliRunner()

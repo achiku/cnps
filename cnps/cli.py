@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 from . import __version__
 from .dump import DatetimeEncoder, find_user_details, find_user_urls
 from .filter import (duplicate_event_filter_generator, read_user_data,
-                     recent_event_frequency_filter_generator,
+                     recent_event_interval_filter_generator,
                      social_link_filter_generator)
 from .user import format_user_info
 
@@ -61,7 +61,7 @@ def filter(
         social_link_filter_generator('twitter', required=twitter_link),
         social_link_filter_generator('facebook', required=facebook_link),
         social_link_filter_generator('github', required=github_link),
-        recent_event_frequency_filter_generator(avg_event_interval),
+        recent_event_interval_filter_generator(avg_event_interval),
         duplicate_event_filter_generator(duplicate_event)
     ]
     user_data = read_user_data(file_path)

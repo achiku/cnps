@@ -20,7 +20,7 @@ pip install cnps
 ```
 Usage: cnps [OPTIONS] COMMAND [ARGS]...
 
-  cnps cli (v0.1.0)
+  cnps cli (v0.1.1)
 
 Options:
   --help  Show this message and exit.
