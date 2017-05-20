@@ -1,11 +1,19 @@
 # cnps
 
+[![PyPI version](https://img.shields.io/pypi/v/cnps.svg)](https://pypi.python.org/pypi/cnps)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/achiku/cnps/master/LICENSE)
+
 See who's comming to your event through [connpass](https://connpass.com/)
 
 ## Why created
 
 Simply said, it's created to find meetup assholes.
 
+## Installation
+
+```
+pip install cnps
+```
 
 ## Usage
 
