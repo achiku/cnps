@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import json
 from datetime import datetime
 
 
@@ -31,10 +32,18 @@ def find_user_details(soup, user_url):
         elif 'github' in url:
             social_links.append({'github': url})
 
-    user_id = user_url.strip('https://connpass.com/user/')
+    user_id = user_url.replace('https://connpass.com/user/', '').strip('/')
     return {
         'user_url': user_url,
         'user_id': user_id,
         'event_dates': event_dates,
         'social_links': social_links,
     }
+
+
+class DatetimeEncoder(json.JSONEncoder):
+    def default(self, obj):
+        try:
+            return super(DatetimeEncoder, obj).default(obj)
+        except TypeError:
+            return str(obj)
