@@ -52,6 +52,8 @@ def avg_event_interval(dates):
     dates = _group_dates(dates)
     for x, y in dates:
         sum_diff = sum_diff + (x - y)
+    if len(dates) == 0:
+        return 0
     avg_interval = float(sum_diff.days) / float(len(dates))
     return avg_interval
 
