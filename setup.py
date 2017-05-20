@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Rate your meetup participants."""
+"""cnps connpass cli"""
 import os
 import re
 
@@ -9,7 +9,7 @@ from setuptools import find_packages, setup
 base_dir = os.path.dirname(os.path.abspath(__file__))
 # Taken from "kennethreitz/requests": http://git.io/vcuY8
 version = ''
-with open('ratemall/__init__.py', 'r') as fd:
+with open('cnps/__init__.py', 'r') as fd:
     version = re.search(r'^__version__\s*=\s*[\'"]([^\'"]*)[\'"]',
                         fd.read(), re.MULTILINE).group(1)
 
@@ -17,13 +17,13 @@ if not version:
     raise RuntimeError('Cannot find version information')
 
 setup(
-    name='ratemall',
+    name='cnps',
     version=version,
-    url='https://github.com/achiku/ratemall',
+    url='https://github.com/achiku/cnps',
     license='MIT',
     author='Akira Chiku',
     author_email='akira.chiku@gmail.com',
-    description='Rate your meetup participants',
+    description='connpass cli',
     long_description=__doc__,
     packages=find_packages(exclude=['tests']),
     include_package_data=True,
@@ -36,7 +36,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'ratemall = ratemall.cli:cli',
+            'cnps = cnps.cli:cli',
         ],
     },
     classifiers=[
@@ -65,7 +65,6 @@ setup(
     ],
     test_suite='tests',
     tests_require=[
-        'httpretty',
         'tox',
         'isort',
         'flake8',

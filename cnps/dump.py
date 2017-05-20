@@ -9,16 +9,3 @@ def find_user_urls(soup):
     for u in users:
         user_urls.append(u['href'])
     return user_urls
-
-
-@click.group()
-@click.pass_context
-def cli(ctx):
-    """connpass CLI group"""
-    pass
-
-
-@cli.command(help="dump basic user data")
-@click.argument('url', required=True)
-def dump(url):
-    click.echo("hello assholes! {0}".format(url))
