@@ -99,3 +99,6 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+connpass_user_detail.html
+connpass_user_list.html
