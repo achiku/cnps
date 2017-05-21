@@ -7,7 +7,8 @@ See who's comming to your event through [connpass](https://connpass.com/)
 
 ## Why created
 
-Simply said, it's created to find meetup assholes.
+Simply put, this tool helps to find meetup assholes.
+
 
 ## Installation
 
@@ -20,7 +21,7 @@ pip install cnps
 ```
 Usage: cnps [OPTIONS] COMMAND [ARGS]...
 
-  cnps cli (v0.1.1)
+  cnps cli
 
 Options:
   --help  Show this message and exit.
