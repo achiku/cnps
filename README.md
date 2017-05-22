@@ -5,10 +5,6 @@
 
 See who's comming to your event through [connpass](https://connpass.com/)
 
-## Why created
-
-Simply put, this tool helps to find meetup assholes.
-
 
 ## Installation
 
