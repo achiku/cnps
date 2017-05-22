@@ -49,21 +49,25 @@ def dump(event_url):
 
 @cli.command(help="filter applicants data with multiple options")
 @click.argument('file-path', required=True)
-@click.option('--facebook-link/--no-facebook-link', default=False)
-@click.option('--github-link/--no-github-link', default=False)
-@click.option('--twitter-link/--no-twitter-link', default=False)
-@click.option('--duplicate-event/--no-duplicate-event', default=False)
-@click.option('--avg-event-interval', default=7)
+@click.option('--facebook-link/--no-facebook-link', default=None)
+@click.option('--github-link/--no-github-link', default=None)
+@click.option('--twitter-link/--no-twitter-link', default=None)
+@click.option('--duplicate-event/--no-duplicate-event', default=None)
+@click.option('--avg-event-interval', default=None, type=float)
 def filter(
         file_path, facebook_link, github_link, twitter_link,
         avg_event_interval, duplicate_event):
-    filter_funcs = [
-        social_link_filter_generator('twitter', required=twitter_link),
-        social_link_filter_generator('facebook', required=facebook_link),
-        social_link_filter_generator('github', required=github_link),
-        recent_event_interval_filter_generator(avg_event_interval),
-        duplicate_event_filter_generator(duplicate_event)
-    ]
+    filter_funcs = []
+    if twitter_link is not None:
+        filter_funcs.append(social_link_filter_generator('twitter', required=twitter_link))
+    if facebook_link is not None:
+        filter_funcs.append(social_link_filter_generator('facebook', required=twitter_link))
+    if github_link is not None:
+        filter_funcs.append(social_link_filter_generator('github', required=twitter_link))
+    if avg_event_interval is not None:
+        filter_funcs.append(recent_event_interval_filter_generator(avg_event_interval))
+    if duplicate_event is not None:
+        filter_funcs.append(duplicate_event_filter_generator(duplicate_event))
     user_data = read_user_data(file_path)
     users = [u for u in user_data if all([f(u) for f in filter_funcs])]
     for u in users:

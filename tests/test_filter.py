@@ -111,3 +111,61 @@ def test_recent_event_frequency_filter_generator(event_dates, interval, expected
     user = {'event_dates': event_dates}
     f = recent_event_interval_filter_generator(interval)
     assert f(user) == expected
+
+
+@pytest.mark.parametrize("event_dates, interval", [
+    (
+        [
+            date(2017, 5, 22),
+            date(2017, 5, 20),
+            date(2017, 5, 18),
+        ], 2.0
+    ),
+    (
+        [
+            date(2017, 5, 22),
+        ], 0
+    ),
+    (
+        [], 0
+    ),
+    (
+        [
+            date(2017, 6, 2),
+            date(2017, 6, 1),
+            date(2017, 5, 31),
+            date(2017, 5, 30),
+            date(2017, 5, 29),
+        ], 1.0
+    ),
+])
+def test_avg_event_interval(event_dates, interval):
+    from cnps.filter import avg_event_interval
+    i = avg_event_interval(event_dates)
+    assert i == interval
+
+
+@pytest.mark.parametrize("dates", [
+    (
+        [
+            date(2017, 5, 22),
+            date(2017, 5, 20),
+            date(2017, 5, 18),
+        ]
+    ),
+    (
+        [
+            date(2017, 5, 22),
+            date(2017, 5, 18),
+        ]
+    ),
+    (
+        [
+            date(2017, 5, 22),
+        ]
+    ),
+])
+def test_group_dates(dates):
+    from cnps.filter import _group_dates
+    dd = _group_dates(dates)
+    print(dd)
