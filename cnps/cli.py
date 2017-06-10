@@ -61,9 +61,9 @@ def filter(
     if twitter_link is not None:
         filter_funcs.append(social_link_filter_generator('twitter', required=twitter_link))
     if facebook_link is not None:
-        filter_funcs.append(social_link_filter_generator('facebook', required=twitter_link))
+        filter_funcs.append(social_link_filter_generator('facebook', required=facebook_link))
     if github_link is not None:
-        filter_funcs.append(social_link_filter_generator('github', required=twitter_link))
+        filter_funcs.append(social_link_filter_generator('github', required=github_link))
     if avg_event_interval is not None:
         filter_funcs.append(recent_event_interval_filter_generator(avg_event_interval))
     if duplicate_event is not None:
