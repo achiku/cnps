@@ -61,7 +61,9 @@ Options:
   --github-link / --no-github-link
   --twitter-link / --no-twitter-link
   --duplicate-event / --no-duplicate-event
-  --avg-event-interval INTEGER
+  --own-event / --no-own-event
+  --presentation / --no-presentation
+  --avg-event-interval FLOAT
   --help                          Show this message and exit.
 ```
 
