@@ -1,692 +1,799 @@
 [
   {
-    "event_dates": [
-      "2017-05-31 00:00:00", 
-      "2017-05-30 00:00:00", 
-      "2017-05-27 00:00:00", 
-      "2017-05-26 00:00:00", 
-      "2017-05-25 00:00:00", 
-      "2017-04-21 00:00:00", 
-      "2017-04-09 00:00:00", 
-      "2017-03-16 00:00:00", 
-      "2017-03-04 00:00:00", 
-      "2017-02-19 00:00:00"
-    ], 
+    "events": [
+      {
+        "date": "2017-08-24 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-06-22 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-05-16 00:00:00",
+        "status": "applyed"
+      }
+    ],
+    "num_bookmarks": 0,
+    "num_events": 3,
+    "num_own_events": 0,
+    "num_presentations": 0,
+    "social_links": [],
+    "user_id": "takeshita_haruki",
+    "user_url": "https://connpass.com/user/takeshita_haruki/"
+  },
+  {
+    "events": [
+      {
+        "date": "2017-08-24 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-03-22 00:00:00",
+        "status": "canceled"
+      },
+      {
+        "date": "2017-02-23 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-02-07 00:00:00",
+        "status": "applyed"
+      }
+    ],
+    "num_bookmarks": 0,
+    "num_events": 3,
+    "num_own_events": 1,
+    "num_presentations": 0,
     "social_links": [
       {
-        "facebook": "https://www.facebook.com/app_scoped_user_id/567993723341849/"
-      }, 
-      {
-        "github": "https://github.com/vsanna"
+        "facebook": "https://www.facebook.com/app_scoped_user_id/566599896870400/"
       }
-    ], 
-    "user_id": "vsanna", 
-    "user_url": "https://connpass.com/user/vsanna/"
-  }, 
+    ],
+    "user_id": "Showta_kubo",
+    "user_url": "https://connpass.com/user/Showta_kubo/"
+  },
   {
-    "event_dates": [
-      "2017-05-26 00:00:00", 
-      "2017-05-25 00:00:00", 
-      "2017-05-24 00:00:00", 
-      "2017-05-20 00:00:00", 
-      "2017-05-17 00:00:00", 
-      "2017-04-27 00:00:00", 
-      "2017-04-25 00:00:00", 
-      "2017-04-21 00:00:00", 
-      "2017-04-19 00:00:00", 
-      "2017-04-13 00:00:00"
-    ], 
+    "events": [
+      {
+        "date": "2017-08-24 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-07-29 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-07-25 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-07-20 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-07-20 00:00:00",
+        "status": "on_waitlist"
+      },
+      {
+        "date": "2017-06-24 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-06-22 00:00:00",
+        "status": "canceled"
+      },
+      {
+        "date": "2017-06-22 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-06-21 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-06-21 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-06-19 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-05-31 00:00:00",
+        "status": "canceled"
+      },
+      {
+        "date": "2017-05-29 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-05-27 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-05-20 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-05-16 00:00:00",
+        "status": "canceled"
+      },
+      {
+        "date": "2017-04-28 00:00:00",
+        "status": "on_waitlist"
+      },
+      {
+        "date": "2017-03-22 00:00:00",
+        "status": "canceled"
+      },
+      {
+        "date": "2017-03-18 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-02-26 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-02-07 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-02-04 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-01-31 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-01-21 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2016-12-17 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2016-11-30 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2016-11-26 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2016-11-22 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2016-11-12 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2016-10-22 00:00:00",
+        "status": "applyed"
+      }
+    ],
+    "num_bookmarks": 31,
+    "num_events": 38,
+    "num_own_events": 0,
+    "num_presentations": 1,
     "social_links": [
       {
-        "twitter": "http://twitter.com/tkhk11"
+        "facebook": "https://www.facebook.com/app_scoped_user_id/10208397431595313/"
       }
-    ], 
-    "user_id": "tkhk", 
-    "user_url": "https://connpass.com/user/tkhk/"
-  }, 
+    ],
+    "user_id": "MasaoIkeya",
+    "user_url": "https://connpass.com/user/MasaoIkeya/"
+  },
   {
-    "event_dates": [
-      "2017-05-30 00:00:00", 
-      "2017-05-26 00:00:00", 
-      "2017-05-16 00:00:00", 
-      "2017-05-11 00:00:00", 
-      "2017-03-28 00:00:00", 
-      "2016-11-16 00:00:00", 
-      "2016-11-01 00:00:00", 
-      "2016-08-01 00:00:00", 
-      "2016-06-02 00:00:00", 
-      "2016-05-31 00:00:00"
-    ], 
+    "events": [
+      {
+        "date": "2017-08-24 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-07-27 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-07-20 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-07-07 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-05-29 00:00:00",
+        "status": "on_waitlist"
+      },
+      {
+        "date": "2017-05-24 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-05-16 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-04-05 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-03-25 00:00:00",
+        "status": "canceled"
+      },
+      {
+        "date": "2017-03-24 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-03-22 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-03-16 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-03-04 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-03-01 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-02-07 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-01-25 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2016-12-02 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2016-11-17 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2016-11-15 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2016-08-18 00:00:00",
+        "status": "canceled"
+      },
+      {
+        "date": "2016-08-18 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2016-07-13 00:00:00",
+        "status": "on_waitlist"
+      },
+      {
+        "date": "2016-03-28 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2016-02-23 00:00:00",
+        "status": "canceled"
+      },
+      {
+        "date": "2014-02-26 00:00:00",
+        "status": "applyed"
+      }
+    ],
+    "num_bookmarks": 1,
+    "num_events": 22,
+    "num_own_events": 0,
+    "num_presentations": 0,
     "social_links": [
       {
-        "twitter": "http://twitter.com/keysket"
-      }, 
-      {
-        "facebook": "https://www.facebook.com/app_scoped_user_id/1431545096/"
+        "facebook": "https://www.facebook.com/app_scoped_user_id/954051551347520/"
       }
-    ], 
-    "user_id": "KeisukeKogure", 
-    "user_url": "https://connpass.com/user/KeisukeKogure/"
-  }, 
+    ],
+    "user_id": "Hi-touch",
+    "user_url": "https://connpass.com/user/Hi-touch/"
+  },
   {
-    "event_dates": [
-      "2017-05-30 00:00:00", 
-      "2017-05-26 00:00:00"
-    ], 
+    "events": [
+      {
+        "date": "2017-08-24 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-06-22 00:00:00",
+        "status": "canceled"
+      },
+      {
+        "date": "2017-03-16 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-01-24 00:00:00",
+        "status": "applyed"
+      }
+    ],
+    "num_bookmarks": 0,
+    "num_events": 3,
+    "num_own_events": 0,
+    "num_presentations": 0,
     "social_links": [
       {
-        "facebook": "https://www.facebook.com/app_scoped_user_id/1183958005065781/"
+        "facebook": "https://www.facebook.com/app_scoped_user_id/10211355453423259/"
       }
-    ], 
-    "user_id": "NaoyukiSibata", 
-    "user_url": "https://connpass.com/user/NaoyukiSibata/"
-  }, 
+    ],
+    "user_id": "TakayukiSakagami",
+    "user_url": "https://connpass.com/user/TakayukiSakagami/"
+  },
   {
-    "event_dates": [
-      "2017-06-13 00:00:00", 
-      "2017-05-29 00:00:00", 
-      "2017-05-26 00:00:00", 
-      "2017-05-25 00:00:00", 
-      "2017-05-23 00:00:00", 
-      "2017-05-21 00:00:00", 
-      "2017-05-19 00:00:00", 
-      "2017-04-21 00:00:00", 
-      "2017-04-18 00:00:00", 
-      "2017-04-10 00:00:00"
-    ], 
-    "social_links": [], 
-    "user_id": "mmotohas", 
-    "user_url": "https://connpass.com/user/mmotohas/"
-  }, 
-  {
-    "event_dates": [
-      "2017-06-15 00:00:00", 
-      "2017-05-26 00:00:00", 
-      "2017-05-17 00:00:00", 
-      "2017-04-28 00:00:00", 
-      "2017-03-23 00:00:00", 
-      "2017-03-10 00:00:00", 
-      "2017-03-07 00:00:00", 
-      "2017-02-21 00:00:00", 
-      "2017-02-17 00:00:00", 
-      "2017-01-24 00:00:00"
-    ], 
+    "events": [
+      {
+        "date": "2017-08-24 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-07-27 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-06-22 00:00:00",
+        "status": "canceled"
+      },
+      {
+        "date": "2017-01-24 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2016-11-17 00:00:00",
+        "status": "on_waitlist"
+      }
+    ],
+    "num_bookmarks": 0,
+    "num_events": 4,
+    "num_own_events": 0,
+    "num_presentations": 0,
     "social_links": [
       {
-        "twitter": "http://twitter.com/akitsuchiya"
+        "twitter": "http://twitter.com/tsubodayo"
       }
-    ], 
-    "user_id": "akitsuchiya", 
-    "user_url": "https://connpass.com/user/akitsuchiya/"
-  }, 
+    ],
+    "user_id": "tsubodayo",
+    "user_url": "https://connpass.com/user/tsubodayo/"
+  },
   {
-    "event_dates": [
-      "2017-06-24 00:00:00", 
-      "2017-06-17 00:00:00", 
-      "2017-06-15 00:00:00", 
-      "2017-06-14 00:00:00", 
-      "2017-06-13 00:00:00", 
-      "2017-06-12 00:00:00", 
-      "2017-06-07 00:00:00", 
-      "2017-06-07 00:00:00", 
-      "2017-06-05 00:00:00", 
-      "2017-06-02 00:00:00"
-    ], 
+    "events": [
+      {
+        "date": "2017-08-24 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-05-29 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-05-24 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-03-16 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-02-07 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-01-24 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2016-11-17 00:00:00",
+        "status": "canceled"
+      },
+      {
+        "date": "2016-07-21 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2016-07-12 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2016-07-03 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2016-07-03 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2016-07-02 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2016-01-27 00:00:00",
+        "status": "applyed"
+      }
+    ],
+    "num_bookmarks": 0,
+    "num_events": 12,
+    "num_own_events": 0,
+    "num_presentations": 0,
+    "social_links": [],
+    "user_id": "sohey",
+    "user_url": "https://connpass.com/user/sohey/"
+  },
+  {
+    "events": [
+      {
+        "date": "2017-08-24 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-05-29 00:00:00",
+        "status": "on_waitlist"
+      },
+      {
+        "date": "2017-05-24 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-03-22 00:00:00",
+        "status": "canceled"
+      },
+      {
+        "date": "2017-02-07 00:00:00",
+        "status": "canceled"
+      },
+      {
+        "date": "2016-10-20 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2016-09-13 00:00:00",
+        "status": "applyed"
+      }
+    ],
+    "num_bookmarks": 0,
+    "num_events": 5,
+    "num_own_events": 0,
+    "num_presentations": 0,
     "social_links": [
       {
-        "twitter": "http://twitter.com/chikumin8"
+        "facebook": "https://www.facebook.com/app_scoped_user_id/1080527845395980/"
       }
-    ], 
-    "user_id": "chikumin", 
-    "user_url": "https://connpass.com/user/chikumin/"
-  }, 
+    ],
+    "user_id": "NatsukiSugisawa",
+    "user_url": "https://connpass.com/user/NatsukiSugisawa/"
+  },
   {
-    "event_dates": [
-      "2017-05-28 00:00:00", 
-      "2017-05-26 00:00:00", 
-      "2017-04-26 00:00:00", 
-      "2017-04-24 00:00:00", 
-      "2017-04-19 00:00:00", 
-      "2017-03-26 00:00:00", 
-      "2017-03-22 00:00:00", 
-      "2017-03-07 00:00:00"
-    ], 
+    "events": [
+      {
+        "date": "2017-08-24 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-07-13 00:00:00",
+        "status": "canceled"
+      },
+      {
+        "date": "2017-07-11 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-07-06 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-05-23 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-05-19 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-05-17 00:00:00",
+        "status": "on_waitlist"
+      },
+      {
+        "date": "2017-05-16 00:00:00",
+        "status": "canceled"
+      },
+      {
+        "date": "2017-04-26 00:00:00",
+        "status": "on_waitlist"
+      },
+      {
+        "date": "2017-03-16 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-02-15 00:00:00",
+        "status": "canceled"
+      },
+      {
+        "date": "2017-02-15 00:00:00",
+        "status": "on_waitlist"
+      },
+      {
+        "date": "2017-02-10 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-01-31 00:00:00",
+        "status": "canceled"
+      },
+      {
+        "date": "2017-01-26 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-01-26 00:00:00",
+        "status": "canceled"
+      },
+      {
+        "date": "2017-01-25 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2016-11-29 00:00:00",
+        "status": "applyed"
+      }
+    ],
+    "num_bookmarks": 1,
+    "num_events": 13,
+    "num_own_events": 0,
+    "num_presentations": 0,
     "social_links": [
       {
-        "github": "https://github.com/tnakade"
+        "facebook": "https://www.facebook.com/app_scoped_user_id/10211117168147700/"
       }
-    ], 
-    "user_id": "tnakade", 
-    "user_url": "https://connpass.com/user/tnakade/"
-  }, 
+    ],
+    "user_id": "IshibashiMunechika",
+    "user_url": "https://connpass.com/user/IshibashiMunechika/"
+  },
   {
-    "event_dates": [
-      "2020-01-01 00:00:00", 
-      "2017-06-29 00:00:00", 
-      "2017-06-23 00:00:00", 
-      "2017-06-15 00:00:00", 
-      "2017-06-14 00:00:00", 
-      "2017-06-13 00:00:00", 
-      "2017-06-12 00:00:00", 
-      "2017-06-07 00:00:00", 
-      "2017-06-07 00:00:00", 
-      "2017-06-02 00:00:00"
-    ], 
+    "events": [
+      {
+        "date": "2017-08-24 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-06-22 00:00:00",
+        "status": "applyed"
+      }
+    ],
+    "num_bookmarks": 0,
+    "num_events": 2,
+    "num_own_events": 0,
+    "num_presentations": 0,
     "social_links": [
       {
-        "twitter": "http://twitter.com/ouisql"
+        "facebook": "https://www.facebook.com/app_scoped_user_id/1316041555179692/"
       }
-    ], 
-    "user_id": "ouisql", 
-    "user_url": "https://connpass.com/user/ouisql/"
-  }, 
+    ],
+    "user_id": "yukikoo",
+    "user_url": "https://connpass.com/user/yukikoo/"
+  },
   {
-    "event_dates": [
-      "2020-01-01 00:00:00", 
-      "2017-07-01 00:00:00", 
-      "2017-06-29 00:00:00", 
-      "2017-06-25 00:00:00", 
-      "2017-06-24 00:00:00", 
-      "2017-06-23 00:00:00", 
-      "2017-06-15 00:00:00", 
-      "2017-06-15 00:00:00", 
-      "2017-06-13 00:00:00", 
-      "2017-06-13 00:00:00"
-    ], 
+    "events": [
+      {
+        "date": "2017-09-07 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-08-24 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-08-18 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-08-10 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-07-30 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-07-29 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-07-28 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-07-27 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-07-26 00:00:00",
+        "status": "in_lottery"
+      },
+      {
+        "date": "2017-07-25 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-07-25 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-07-23 00:00:00",
+        "status": "in_lottery"
+      },
+      {
+        "date": "2017-07-21 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-07-19 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-07-18 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-07-12 00:00:00",
+        "status": "canceled"
+      },
+      {
+        "date": "2017-07-11 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-07-10 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-07-07 00:00:00",
+        "status": "canceled"
+      },
+      {
+        "date": "2017-06-28 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-05-21 00:00:00",
+        "status": "canceled"
+      },
+      {
+        "date": "2017-03-08 00:00:00",
+        "status": "applyed"
+      }
+    ],
+    "num_bookmarks": 0,
+    "num_events": 19,
+    "num_own_events": 0,
+    "num_presentations": 0,
+    "social_links": [],
+    "user_id": "wander",
+    "user_url": "https://connpass.com/user/wander/"
+  },
+  {
+    "events": [
+      {
+        "date": "2017-08-24 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-05-24 00:00:00",
+        "status": "on_waitlist"
+      },
+      {
+        "date": "2017-02-22 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2016-10-20 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2016-06-21 00:00:00",
+        "status": "applyed"
+      }
+    ],
+    "num_bookmarks": 0,
+    "num_events": 5,
+    "num_own_events": 0,
+    "num_presentations": 0,
     "social_links": [
       {
-        "twitter": "http://twitter.com/nakayamachama"
+        "facebook": "https://www.facebook.com/app_scoped_user_id/896149103844836/"
       }
-    ], 
-    "user_id": "yudai_nakayama", 
-    "user_url": "https://connpass.com/user/yudai_nakayama/"
-  }, 
+    ],
+    "user_id": "YujiroShin",
+    "user_url": "https://connpass.com/user/YujiroShin/"
+  },
   {
-    "event_dates": [
-      "2017-06-07 00:00:00", 
-      "2017-06-07 00:00:00", 
-      "2017-05-26 00:00:00", 
-      "2017-05-22 00:00:00", 
-      "2017-05-10 00:00:00", 
-      "2017-05-06 00:00:00", 
-      "2017-04-25 00:00:00", 
-      "2017-04-24 00:00:00", 
-      "2017-04-21 00:00:00", 
-      "2017-04-17 00:00:00"
-    ], 
+    "events": [
+      {
+        "date": "2017-08-24 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-07-26 00:00:00",
+        "status": "in_lottery"
+      },
+      {
+        "date": "2017-06-22 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-05-16 00:00:00",
+        "status": "canceled"
+      }
+    ],
+    "num_bookmarks": 0,
+    "num_events": 3,
+    "num_own_events": 0,
+    "num_presentations": 0,
     "social_links": [
       {
-        "twitter": "http://twitter.com/tenkoma"
-      }, 
-      {
-        "github": "https://github.com/tenkoma"
+        "facebook": "https://www.facebook.com/app_scoped_user_id/580095035421079/"
       }
-    ], 
-    "user_id": "tenkoma", 
-    "user_url": "https://connpass.com/user/tenkoma/"
-  }, 
+    ],
+    "user_id": "Obunai",
+    "user_url": "https://connpass.com/user/Obunai/"
+  },
   {
-    "event_dates": [
-      "2017-05-26 00:00:00", 
-      "2017-05-20 00:00:00", 
-      "2017-03-29 00:00:00", 
-      "2017-01-18 00:00:00", 
-      "2017-01-12 00:00:00", 
-      "2016-11-25 00:00:00", 
-      "2016-10-12 00:00:00", 
-      "2016-10-06 00:00:00", 
-      "2016-09-10 00:00:00", 
-      "2016-09-09 00:00:00"
-    ], 
-    "social_links": [
+    "events": [
       {
-        "facebook": "https://www.facebook.com/app_scoped_user_id/100000699287431/"
+        "date": "2017-08-24 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-07-26 00:00:00",
+        "status": "in_lottery"
       }
-    ], 
-    "user_id": "nyura", 
-    "user_url": "https://connpass.com/user/nyura/"
-  }, 
+    ],
+    "num_bookmarks": 0,
+    "num_events": 2,
+    "num_own_events": 0,
+    "num_presentations": 0,
+    "social_links": [],
+    "user_id": "miyuki_abe_",
+    "user_url": "https://connpass.com/user/miyuki_abe_/"
+  },
   {
-    "event_dates": [
-      "2017-05-26 00:00:00", 
-      "2017-01-28 00:00:00", 
-      "2016-07-20 00:00:00", 
-      "2015-02-23 00:00:00", 
-      "2015-02-20 00:00:00"
-    ], 
-    "social_links": [
+    "events": [
       {
-        "facebook": "https://www.facebook.com/app_scoped_user_id/100001962590247/"
+        "date": "2017-08-24 00:00:00",
+        "status": "applyed"
+      },
+      {
+        "date": "2017-07-26 00:00:00",
+        "status": "in_lottery"
+      },
+      {
+        "date": "2017-05-17 00:00:00",
+        "status": "on_waitlist"
+      },
+      {
+        "date": "2014-10-15 00:00:00",
+        "status": "on_waitlist"
       }
-    ], 
-    "user_id": "yuuki_1224", 
-    "user_url": "https://connpass.com/user/yuuki_1224/"
-  }, 
-  {
-    "event_dates": [
-      "2017-06-16 00:00:00", 
-      "2017-06-13 00:00:00", 
-      "2017-06-07 00:00:00", 
-      "2017-06-05 00:00:00", 
-      "2017-06-02 00:00:00", 
-      "2017-05-30 00:00:00", 
-      "2017-05-26 00:00:00", 
-      "2017-05-26 00:00:00", 
-      "2017-05-24 00:00:00", 
-      "2017-05-21 00:00:00"
-    ], 
-    "social_links": [
-      {
-        "twitter": "http://twitter.com/kogane5513"
-      }, 
-      {
-        "facebook": "https://www.facebook.com/app_scoped_user_id/100003220947824/"
-      }, 
-      {
-        "github": "https://github.com/KoganezawaRyouta"
-      }
-    ], 
-    "user_id": "ryouta_kogaenzawa", 
-    "user_url": "https://connpass.com/user/ryouta_kogaenzawa/"
-  }, 
-  {
-    "event_dates": [
-      "2017-06-29 00:00:00", 
-      "2017-06-23 00:00:00", 
-      "2017-06-15 00:00:00", 
-      "2017-06-14 00:00:00", 
-      "2017-06-09 00:00:00", 
-      "2017-06-07 00:00:00", 
-      "2017-06-07 00:00:00", 
-      "2017-06-07 00:00:00", 
-      "2017-06-07 00:00:00", 
-      "2017-05-28 00:00:00"
-    ], 
-    "social_links": [
-      {
-        "facebook": "https://www.facebook.com/app_scoped_user_id/1285740541500780/"
-      }
-    ], 
-    "user_id": "RiekoMiyamoto", 
-    "user_url": "https://connpass.com/user/RiekoMiyamoto/"
-  }, 
-  {
-    "event_dates": [
-      "2017-06-22 00:00:00", 
-      "2017-06-17 00:00:00", 
-      "2017-06-10 00:00:00", 
-      "2017-06-09 00:00:00", 
-      "2017-06-05 00:00:00", 
-      "2017-06-03 00:00:00", 
-      "2017-06-02 00:00:00", 
-      "2017-06-02 00:00:00", 
-      "2017-06-02 00:00:00", 
-      "2017-06-02 00:00:00"
-    ], 
-    "social_links": [
-      {
-        "twitter": "http://twitter.com/TxRacing"
-      }
-    ], 
-    "user_id": "TxRacing", 
-    "user_url": "https://connpass.com/user/TxRacing/"
-  }, 
-  {
-    "event_dates": [
-      "2017-06-29 00:00:00", 
-      "2017-06-21 00:00:00", 
-      "2017-06-15 00:00:00", 
-      "2017-06-13 00:00:00", 
-      "2017-06-12 00:00:00", 
-      "2017-06-07 00:00:00", 
-      "2017-06-07 00:00:00", 
-      "2017-06-02 00:00:00", 
-      "2017-06-01 00:00:00", 
-      "2017-05-31 00:00:00"
-    ], 
-    "social_links": [
-      {
-        "twitter": "http://twitter.com/youhonda30"
-      }
-    ], 
-    "user_id": "honta", 
-    "user_url": "https://connpass.com/user/honta/"
-  }, 
-  {
-    "event_dates": [
-      "2017-05-26 00:00:00", 
-      "2016-12-12 00:00:00", 
-      "2016-11-29 00:00:00", 
-      "2016-10-25 00:00:00", 
-      "2016-09-05 00:00:00", 
-      "2016-04-22 00:00:00", 
-      "2016-04-13 00:00:00"
-    ], 
-    "social_links": [
-      {
-        "twitter": "http://twitter.com/st_dsk"
-      }
-    ], 
-    "user_id": "st_dsk", 
-    "user_url": "https://connpass.com/user/st_dsk/"
-  }, 
-  {
-    "event_dates": [
-      "2017-06-25 00:00:00", 
-      "2017-06-22 00:00:00", 
-      "2017-06-15 00:00:00", 
-      "2017-06-14 00:00:00", 
-      "2017-06-13 00:00:00", 
-      "2017-06-13 00:00:00", 
-      "2017-06-09 00:00:00", 
-      "2017-06-08 00:00:00", 
-      "2017-06-07 00:00:00", 
-      "2017-06-05 00:00:00"
-    ], 
-    "social_links": [
-      {
-        "facebook": "https://www.facebook.com/app_scoped_user_id/850890661652793/"
-      }
-    ], 
-    "user_id": "RyoFujiura", 
-    "user_url": "https://connpass.com/user/RyoFujiura/"
-  }, 
-  {
-    "event_dates": [
-      "2017-06-29 00:00:00", 
-      "2017-06-23 00:00:00", 
-      "2017-06-21 00:00:00", 
-      "2017-06-18 00:00:00", 
-      "2017-06-15 00:00:00", 
-      "2017-06-15 00:00:00", 
-      "2017-06-13 00:00:00", 
-      "2017-06-12 00:00:00", 
-      "2017-06-08 00:00:00", 
-      "2017-06-07 00:00:00"
-    ], 
-    "social_links": [], 
-    "user_id": "nobuyuki50", 
-    "user_url": "https://connpass.com/user/nobuyuki50/"
-  }, 
-  {
-    "event_dates": [
-      "2017-05-31 00:00:00", 
-      "2017-05-29 00:00:00", 
-      "2017-05-26 00:00:00", 
-      "2017-05-19 00:00:00", 
-      "2017-05-15 00:00:00", 
-      "2017-02-22 00:00:00", 
-      "2016-11-06 00:00:00", 
-      "2016-09-13 00:00:00", 
-      "2016-07-01 00:00:00", 
-      "2016-06-29 00:00:00"
-    ], 
-    "social_links": [
-      {
-        "twitter": "http://twitter.com/Sho123N"
-      }, 
-      {
-        "facebook": "https://www.facebook.com/app_scoped_user_id/924737170941387/"
-      }, 
-      {
-        "github": "https://github.com/ShoheiO"
-      }
-    ], 
-    "user_id": "ShoheiXONO", 
-    "user_url": "https://connpass.com/user/ShoheiXONO/"
-  }, 
-  {
-    "event_dates": [
-      "2017-06-05 00:00:00", 
-      "2017-05-26 00:00:00", 
-      "2017-05-23 00:00:00", 
-      "2017-05-22 00:00:00", 
-      "2017-05-18 00:00:00", 
-      "2017-05-16 00:00:00", 
-      "2017-04-28 00:00:00", 
-      "2017-04-14 00:00:00", 
-      "2017-02-24 00:00:00", 
-      "2017-01-25 00:00:00"
-    ], 
-    "social_links": [], 
-    "user_id": "aehata", 
-    "user_url": "https://connpass.com/user/aehata/"
-  }, 
-  {
-    "event_dates": [
-      "2017-06-15 00:00:00", 
-      "2017-06-07 00:00:00", 
-      "2017-06-01 00:00:00", 
-      "2017-05-31 00:00:00", 
-      "2017-05-26 00:00:00", 
-      "2017-05-25 00:00:00", 
-      "2017-05-23 00:00:00", 
-      "2017-05-20 00:00:00", 
-      "2017-05-07 00:00:00", 
-      "2017-04-24 00:00:00"
-    ], 
-    "social_links": [], 
-    "user_id": "echodev", 
-    "user_url": "https://connpass.com/user/echodev/"
-  }, 
-  {
-    "event_dates": [
-      "2017-05-30 00:00:00", 
-      "2017-05-26 00:00:00", 
-      "2017-03-25 00:00:00", 
-      "2016-12-12 00:00:00", 
-      "2016-09-05 00:00:00", 
-      "2016-06-27 00:00:00"
-    ], 
-    "social_links": [
-      {
-        "facebook": "https://www.facebook.com/app_scoped_user_id/100001281386480/"
-      }
-    ], 
-    "user_id": "kensuke_kurahara_7d", 
-    "user_url": "https://connpass.com/user/kensuke_kurahara_7d/"
-  }, 
-  {
-    "event_dates": [
-      "2017-06-30 00:00:00", 
-      "2017-06-23 00:00:00", 
-      "2017-06-13 00:00:00", 
-      "2017-06-03 00:00:00", 
-      "2017-05-27 00:00:00", 
-      "2017-05-26 00:00:00", 
-      "2017-05-26 00:00:00", 
-      "2017-05-24 00:00:00", 
-      "2017-05-20 00:00:00", 
-      "2017-05-19 00:00:00"
-    ], 
-    "social_links": [
-      {
-        "twitter": "http://twitter.com/sugeeomosiroi"
-      }
-    ], 
-    "user_id": "sugeeomosiroi", 
-    "user_url": "https://connpass.com/user/sugeeomosiroi/"
-  }, 
-  {
-    "event_dates": [
-      "2017-05-26 00:00:00", 
-      "2016-06-01 00:00:00", 
-      "2016-03-12 00:00:00", 
-      "2016-03-05 00:00:00", 
-      "2016-02-05 00:00:00", 
-      "2015-12-10 00:00:00", 
-      "2015-11-20 00:00:00", 
-      "2015-10-13 00:00:00", 
-      "2015-10-09 00:00:00", 
-      "2015-09-17 00:00:00"
-    ], 
-    "social_links": [
-      {
-        "facebook": "https://www.facebook.com/app_scoped_user_id/100002011309223/"
-      }
-    ], 
-    "user_id": "tsuguru_saeki", 
-    "user_url": "https://connpass.com/user/tsuguru_saeki/"
-  }, 
-  {
-    "event_dates": [
-      "2017-06-21 00:00:00", 
-      "2017-06-14 00:00:00", 
-      "2017-06-13 00:00:00", 
-      "2017-06-08 00:00:00", 
-      "2017-06-06 00:00:00", 
-      "2017-06-05 00:00:00", 
-      "2017-06-05 00:00:00", 
-      "2017-06-04 00:00:00", 
-      "2017-06-02 00:00:00", 
-      "2017-06-02 00:00:00"
-    ], 
-    "social_links": [
-      {
-        "twitter": "http://twitter.com/crazysrot"
-      }, 
-      {
-        "facebook": "https://www.facebook.com/app_scoped_user_id/1334732273300350/"
-      }
-    ], 
-    "user_id": "crazysrot", 
-    "user_url": "https://connpass.com/user/crazysrot/"
-  }, 
-  {
-    "event_dates": [
-      "2017-05-30 00:00:00", 
-      "2017-05-26 00:00:00"
-    ], 
-    "social_links": [
-      {
-        "facebook": "https://www.facebook.com/app_scoped_user_id/1908384009435540/"
-      }
-    ], 
-    "user_id": "KensyoSakurai", 
-    "user_url": "https://connpass.com/user/KensyoSakurai/"
-  }, 
-  {
-    "event_dates": [
-      "2017-05-26 00:00:00", 
-      "2017-05-16 00:00:00", 
-      "2017-05-16 00:00:00", 
-      "2017-01-31 00:00:00", 
-      "2017-01-31 00:00:00", 
-      "2017-01-16 00:00:00", 
-      "2016-12-20 00:00:00", 
-      "2016-11-17 00:00:00", 
-      "2016-10-31 00:00:00", 
-      "2016-10-31 00:00:00"
-    ], 
-    "social_links": [
-      {
-        "twitter": "http://twitter.com/shohu33"
-      }
-    ], 
-    "user_id": "shohu", 
-    "user_url": "https://connpass.com/user/shohu/"
-  }, 
-  {
-    "event_dates": [
-      "2017-06-22 00:00:00", 
-      "2017-06-15 00:00:00", 
-      "2017-06-09 00:00:00", 
-      "2017-06-08 00:00:00", 
-      "2017-06-07 00:00:00", 
-      "2017-05-31 00:00:00", 
-      "2017-05-31 00:00:00", 
-      "2017-05-30 00:00:00", 
-      "2017-05-29 00:00:00", 
-      "2017-05-26 00:00:00"
-    ], 
-    "social_links": [
-      {
-        "facebook": "https://www.facebook.com/app_scoped_user_id/167011900400431/"
-      }
-    ], 
-    "user_id": "tomohiko_isobe", 
-    "user_url": "https://connpass.com/user/tomohiko_isobe/"
-  }, 
-  {
-    "event_dates": [
-      "2017-06-06 00:00:00", 
-      "2017-06-01 00:00:00", 
-      "2017-05-31 00:00:00", 
-      "2017-05-30 00:00:00", 
-      "2017-05-29 00:00:00", 
-      "2017-05-26 00:00:00", 
-      "2017-05-25 00:00:00", 
-      "2017-05-25 00:00:00", 
-      "2017-05-24 00:00:00", 
-      "2017-05-23 00:00:00"
-    ], 
-    "social_links": [], 
-    "user_id": "k_dot", 
-    "user_url": "https://connpass.com/user/k_dot/"
-  }, 
-  {
-    "event_dates": [
-      "2017-05-26 00:00:00", 
-      "2017-05-25 00:00:00", 
-      "2017-04-20 00:00:00", 
-      "2016-03-21 00:00:00", 
-      "2016-03-05 00:00:00", 
-      "2016-02-24 00:00:00", 
-      "2016-02-23 00:00:00", 
-      "2016-02-17 00:00:00", 
-      "2016-02-17 00:00:00", 
-      "2016-02-16 00:00:00"
-    ], 
-    "social_links": [
-      {
-        "twitter": "http://twitter.com/otiai10"
-      }, 
-      {
-        "facebook": "https://www.facebook.com/app_scoped_user_id/100000589951206/"
-      }, 
-      {
-        "github": "https://github.com/otiai10"
-      }
-    ], 
-    "user_id": "otiai10", 
-    "user_url": "https://connpass.com/user/otiai10/"
-  }, 
-  {
-    "event_dates": [
-      "2017-05-26 00:00:00", 
-      "2017-05-25 00:00:00", 
-      "2017-05-19 00:00:00", 
-      "2017-04-21 00:00:00", 
-      "2017-04-11 00:00:00", 
-      "2017-03-25 00:00:00", 
-      "2017-03-09 00:00:00", 
-      "2017-02-04 00:00:00", 
-      "2016-12-09 00:00:00", 
-      "2016-12-07 00:00:00"
-    ], 
-    "social_links": [
-      {
-        "twitter": "http://twitter.com/picopico_robot2"
-      }
-    ], 
-    "user_id": "picopico_robot2", 
-    "user_url": "https://connpass.com/user/picopico_robot2/"
-  }, 
-  {
-    "event_dates": [
-      "2017-06-12 00:00:00", 
-      "2017-06-07 00:00:00", 
-      "2017-05-30 00:00:00", 
-      "2017-05-30 00:00:00", 
-      "2017-05-29 00:00:00", 
-      "2017-05-29 00:00:00", 
-      "2017-05-26 00:00:00", 
-      "2017-05-26 00:00:00", 
-      "2017-05-26 00:00:00", 
-      "2017-05-26 00:00:00"
-    ], 
-    "social_links": [], 
-    "user_id": "chankengogo", 
-    "user_url": "https://connpass.com/user/chankengogo/"
+    ],
+    "num_bookmarks": 0,
+    "num_events": 4,
+    "num_own_events": 0,
+    "num_presentations": 0,
+    "social_links": [],
+    "user_id": "nacchin777",
+    "user_url": "https://connpass.com/user/nacchin777/"
   }
 ]

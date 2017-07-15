@@ -13,6 +13,14 @@ def test_find_user_urls():
     assert 'https://connpass.com/user/KeisukeKogure/' in urls
 
 
+def test_find_user_event_details():
+    from cnps.dump import find_user_event_details
+    with open('./data/connpass_user_detail.html') as fp:
+        soup = BeautifulSoup(fp, 'html.parser')
+        events = find_user_event_details(soup, 'https://connpass.com/user/KeisukeKogure/')
+    print(events)
+
+
 def test_find_user_detail():
     from cnps.dump import find_user_details
     user = {}
@@ -20,6 +28,7 @@ def test_find_user_detail():
         soup = BeautifulSoup(fp, 'html.parser')
         user = find_user_details(soup, 'https://connpass.com/user/KeisukeKogure/')
     assert user['user_id'] == 'KeisukeKogure'
+    print(user)
 
 
 @pytest.mark.skip()
