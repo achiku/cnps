@@ -9,7 +9,8 @@ from bs4 import BeautifulSoup
 from . import __version__
 from .dump import (DatetimeEncoder, find_user_details, find_user_event_details,
                    find_user_urls)
-from .filter import (duplicate_event_filter_generator, read_user_data,
+from .filter import (duplicate_event_filter_generator,
+                     event_tab_count_filter_generator, read_user_data,
                      recent_event_interval_filter_generator,
                      social_link_filter_generator)
 from .user import format_user_info
@@ -59,10 +60,12 @@ def dump(event_url):
 @click.option('--github-link/--no-github-link', default=None)
 @click.option('--twitter-link/--no-twitter-link', default=None)
 @click.option('--duplicate-event/--no-duplicate-event', default=None)
+@click.option('--own-event/--no-own-event', default=None)
+@click.option('--presentation/--no-presentation', default=None)
 @click.option('--avg-event-interval', default=None, type=float)
 def filter(
         file_path, facebook_link, github_link, twitter_link,
-        avg_event_interval, duplicate_event):
+        avg_event_interval, duplicate_event, own_event, presentation):
     filter_funcs = []
     if twitter_link is not None:
         filter_funcs.append(social_link_filter_generator('twitter', required=twitter_link))
@@ -72,6 +75,10 @@ def filter(
         filter_funcs.append(social_link_filter_generator('github', required=github_link))
     if avg_event_interval is not None:
         filter_funcs.append(recent_event_interval_filter_generator(avg_event_interval))
+    if own_event is not None:
+        filter_funcs.append(event_tab_count_filter_generator('num_own_events', own_event))
+    if presentation is not None:
+        filter_funcs.append(event_tab_count_filter_generator('num_presentations', presentation))
     if duplicate_event is not None:
         filter_funcs.append(duplicate_event_filter_generator(duplicate_event))
     user_data = read_user_data(file_path)

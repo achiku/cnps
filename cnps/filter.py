@@ -72,6 +72,16 @@ def recent_event_interval_filter_generator(interval):
     return f
 
 
+def event_tab_count_filter_generator(target, required):
+    def f(user):
+        if user[target] > 0:
+            return True
+        if not required:
+            return True
+        return False
+    return f
+
+
 def duplicate_event_filter_generator(required):
     def f(user):
         event_dates = user['events']

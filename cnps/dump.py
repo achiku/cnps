@@ -78,11 +78,22 @@ def find_user_details(soup, user_url):
         elif 'github' in url:
             social_links.append({'github': url})
 
+    summary_tabs = ['events', 'own_events', 'presentations', 'bookmarks']
+    summary_soup = soup.find('ul', class_='square_tab tab_length_four_parts clearfix mb_15')
+    counters = summary_soup.find_all('span', class_='num')
+    summary = {}
+    for idx, count in enumerate(counters):
+        summary[summary_tabs[idx]] = int(count.text)
+
     user_id = user_url.replace('https://connpass.com/user/', '').strip('/')
     return {
         'user_url': user_url,
         'user_id': user_id,
         'social_links': social_links,
+        'num_events': summary['events'],
+        'num_own_events': summary['own_events'],
+        'num_presentations': summary['presentations'],
+        'num_bookmarks': summary['bookmarks'],
     }
 
 
