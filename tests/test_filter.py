@@ -49,36 +49,36 @@ def test_social_link_filter_generator(links, target, required, expected):
 @pytest.mark.parametrize("event_dates, required, expected", [
     (
         [
-            date(2017, 5, 20),
-            date(2017, 5, 20),
-            date(2017, 5, 21),
+            {'date': date(2017, 5, 20), 'status': 'applyed'},
+            {'date': date(2017, 5, 20), 'status': 'applyed'},
+            {'date': date(2017, 5, 21), 'status': 'applyed'},
         ], True, True
     ),
     (
         [
-            date(2017, 5, 20),
-            date(2017, 5, 24),
-            date(2017, 5, 21),
+            {'date': date(2017, 5, 20), 'status': 'applyed'},
+            {'date': date(2017, 5, 24), 'status': 'applyed'},
+            {'date': date(2017, 5, 21), 'status': 'applyed'},
         ], True, False
     ),
     (
         [
-            date(2017, 5, 20),
-            date(2017, 5, 20),
-            date(2017, 5, 21),
+            {'date': date(2017, 5, 20), 'status': 'applyed'},
+            {'date': date(2017, 5, 20), 'status': 'applyed'},
+            {'date': date(2017, 5, 21), 'status': 'applyed'},
         ], False, False
     ),
     (
         [
-            date(2017, 5, 20),
-            date(2017, 5, 24),
-            date(2017, 5, 21),
+            {'date': date(2017, 5, 20), 'status': 'applyed'},
+            {'date': date(2017, 5, 24), 'status': 'applyed'},
+            {'date': date(2017, 5, 21), 'status': 'applyed'},
         ], False, True
     ),
 ])
 def test_duplicate_event_filter_generator(event_dates, required, expected):
     from cnps.filter import duplicate_event_filter_generator
-    user = {'event_dates': event_dates}
+    user = {'events': event_dates}
     f = duplicate_event_filter_generator(required)
     assert f(user) == expected
 
@@ -86,29 +86,29 @@ def test_duplicate_event_filter_generator(event_dates, required, expected):
 @pytest.mark.parametrize("event_dates, interval, expected", [
     (
         [
-            date(2017, 5, 22),
-            date(2017, 5, 20),
-            date(2017, 5, 18),
+            {'date': date(2017, 5, 22), 'status': 'applyed'},
+            {'date': date(2017, 5, 20), 'status': 'applyed'},
+            {'date': date(2017, 5, 18), 'status': 'applyed'},
         ], 1, False
     ),
     (
         [
-            date(2017, 5, 22),
-            date(2017, 5, 20),
-            date(2017, 5, 18),
+            {'date': date(2017, 5, 22), 'status': 'applyed'},
+            {'date': date(2017, 5, 20), 'status': 'applyed'},
+            {'date': date(2017, 5, 18), 'status': 'applyed'},
         ], 2, True
     ),
     (
         [
-            date(2017, 5, 22),
-            date(2017, 5, 20),
-            date(2017, 5, 18),
+            {'date': date(2017, 5, 22), 'status': 'applyed'},
+            {'date': date(2017, 5, 20), 'status': 'applyed'},
+            {'date': date(2017, 5, 18), 'status': 'applyed'},
         ], 3, True
     ),
 ])
 def test_recent_event_frequency_filter_generator(event_dates, interval, expected):
     from cnps.filter import recent_event_interval_filter_generator
-    user = {'event_dates': event_dates}
+    user = {'events': event_dates}
     f = recent_event_interval_filter_generator(interval)
     assert f(user) == expected
 

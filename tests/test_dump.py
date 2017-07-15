@@ -19,7 +19,6 @@ def test_find_user_event_details():
         soup = BeautifulSoup(fp, 'html.parser')
         events = find_user_event_details(soup, 'https://connpass.com/user/KeisukeKogure/')
     print(events)
-    assert False
 
 
 def test_find_user_detail():
@@ -30,7 +29,6 @@ def test_find_user_detail():
         user = find_user_details(soup, 'https://connpass.com/user/KeisukeKogure/')
     assert user['user_id'] == 'KeisukeKogure'
     print(user)
-    assert False
 
 
 @pytest.mark.skip()
