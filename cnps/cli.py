@@ -7,7 +7,8 @@ import requests
 from bs4 import BeautifulSoup
 
 from . import __version__
-from .dump import DatetimeEncoder, find_user_details, find_user_urls
+from .dump import (DatetimeEncoder, find_user_details, find_user_event_details,
+                   find_user_urls)
 from .filter import (duplicate_event_filter_generator, read_user_data,
                      recent_event_interval_filter_generator,
                      social_link_filter_generator)
@@ -41,6 +42,11 @@ def dump(event_url):
             BeautifulSoup(user_res.text, 'html.parser'),
             user_url,
         )
+        events = find_user_event_details(
+            BeautifulSoup(user_res.text, 'html.parser'),
+            user_url,
+        )
+        u['events'] = events
         user_data.append(u)
         click.echo("[{0}/{1}]: {2}".format(idx, len(user_urls), u['user_id']), err=True)
         sleep(1)

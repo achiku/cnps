@@ -8,21 +8,29 @@ from bs4 import BeautifulSoup
 
 
 def find_user_urls(soup):
+    # check lottery first
     tbl = soup.find('div', class_='lottery_table_area')
-    users = tbl.find_all('a', class_='image_link')
+    if tbl is None:
+        tbl = soup.find('div', class_='participation_table_area')
+
     user_urls = []
+    users = tbl.find_all('a', class_='image_link')
     for u in users:
         user_urls.append(u['href'])
     return user_urls
 
 
 def find_user_event_details(soup, user_url):
+    events = _parse_event(soup)
+
     page_area = soup.find('div', class_='paging_area')
+    if page_area is None:
+        return events
+
     page_count = 0
     for i in page_area.find_all('li'):
         if i.text != '次へ>>':
             page_count += 1
-    events = _parse_event(soup)
 
     page_limit = min(page_count, 3)
     for i in range(1, page_limit):
@@ -30,7 +38,7 @@ def find_user_event_details(soup, user_url):
         event_res = requests.get(user_url, params={'page': page_num})
         soup = BeautifulSoup(event_res.text, 'html.parser')
         evt = _parse_event(soup)
-        events.append(evt)
+        events.extend(evt)
         sleep(1)
     return events
 
@@ -54,7 +62,7 @@ def _parse_event(soup):
             status_label = 'in_lottery'
 
         dt = datetime.strptime("{0}/{1}".format(year, date), '%Y/%m/%d')
-        event_dates.append((status_label, dt))
+        event_dates.append({'status': status_label, 'date': dt})
     return event_dates
 
 

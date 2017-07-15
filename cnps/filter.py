@@ -12,8 +12,12 @@ def read_user_data(file_path):
 
 def date_hook(json_dict):
     for key, value in json_dict.items():
-        if key == 'event_dates':
-            json_dict[key] = [datetime.strptime(t, "%Y-%m-%d %H:%M:%S") for t in value]
+        if key == 'events':
+            d = [
+                {'date': datetime.strptime(t['date'], "%Y-%m-%d %H:%M:%S"), 'status': t['status']}
+                for t in value
+            ]
+            json_dict[key] = d
         else:
             pass
     return json_dict
@@ -60,7 +64,8 @@ def avg_event_interval(dates):
 
 def recent_event_interval_filter_generator(interval):
     def f(user):
-        avg_interval = avg_event_interval(user['event_dates'])
+        event_dates = [t['date'] for t in user['events']]
+        avg_interval = avg_event_interval(event_dates)
         if avg_interval <= interval:
             return True
         return False
@@ -69,8 +74,9 @@ def recent_event_interval_filter_generator(interval):
 
 def duplicate_event_filter_generator(required):
     def f(user):
-        for event_date in user['event_dates']:
-            count = sum([1 for d in user['event_dates'] if d == event_date])
+        event_dates = user['events']
+        for dt in event_dates:
+            count = sum([1 for d in event_dates if d == dt])
             if count >= 2 and required:
                 return True
             elif count >= 2 and not required:
