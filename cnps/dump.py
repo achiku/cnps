@@ -9,14 +9,15 @@ from bs4 import BeautifulSoup
 
 def find_user_urls(soup):
     # check lottery first
-    tbl = soup.find('div', class_='lottery_table_area')
-    if tbl is None:
+    tbls = soup.find_all('div', class_='lottery_table_area')
+    if tbls is None:
         tbl = soup.find('div', class_='participation_table_area')
 
     user_urls = []
-    users = tbl.find_all('a', class_='image_link')
-    for u in users:
-        user_urls.append(u['href'])
+    for tbl in tbls:
+        users = tbl.find_all('a', class_='image_link')
+        for u in users:
+            user_urls.append(u['href'])
     return user_urls
 
 
@@ -67,16 +68,16 @@ def _parse_event(soup):
 
 
 def find_user_details(soup, user_url):
-    social_links = []
+    social_links = {}
     social_links_soup = soup.find('span', class_='social_link').find_all('a')
     for link in social_links_soup:
         url = link['href']
         if 'twitter' in url:
-            social_links.append({'twitter': url})
+            social_links['twitter'] = url
         elif 'facebook' in url:
-            social_links.append({'facebook': url})
+            social_links['facebook'] = url
         elif 'github' in url:
-            social_links.append({'github': url})
+            social_links['github'] = url
 
     summary_tabs = ['events', 'own_events', 'presentations', 'bookmarks']
     summary_soup = soup.find('ul', class_='square_tab tab_length_four_parts clearfix mb_15')

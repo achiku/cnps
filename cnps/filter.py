@@ -26,12 +26,11 @@ def date_hook(json_dict):
 def social_link_filter_generator(target, required=False):
     def f(user):
         links = user['social_links']
-        for link in links:
-            for k, _ in link.items():
-                if k == target and required:
-                    return True
-                elif k == target and not required:
-                    return False
+        for k in links.keys():
+            if k == target and required:
+                return True
+            elif k == target and not required:
+                return False
         if not required:
             return True
         return False
